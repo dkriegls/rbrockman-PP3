@@ -10,13 +10,48 @@
         <fieldset>
             <legend>My Info:</legend>
             First name:<br>
-            <input type="text" name="first_name_field"><br>
+            <input type="text" name="first_name_field" type="text" placeholder="First Name Only" required><br>
             Last name:<br>
-            <input type="text" name="last_name_field"><br>
+            <input type="text" name="last_name_field" type="text" placeholder="Last Name Only" required><br>
+			Phone Number:<br>
+			<input type="text" name="phone_field" type="tel" placeholder="Eg. XXX-YYY-ZZZZ" required><br>
+			Email Address:<br>
+			<input type="text" name="email_field"type="email" placeholder="Eg. login@domain-name" required ><br>
             Gender:<br>
             <input type="radio" name="gender_field" value="male"> Male<br>
             <input type="radio" name="gender_field" value="female"> Female<br>
-            <input type="radio" name="gender_field" value="other" checked> Other<br>
-			</fieldset>
+			Age:<br>
+			<input type="checkbox" name="age_field" value="Under 18" id="Under 18">
+            <label for="Under 18">Under18</label>
+            <input type="checkbox" name="age_field" value="18 - 24" id="18 - 24">
+            <label for="18 - 24">18 - 24</label>
+            <input type="checkbox" name="age_field" value="25 - 34" id="25 - 34">
+            <label for="25 - 34">25 -34</label>
+			<input type="checkbox" name="age_field" value="35 - 44" id="35 - 44">
+            <label for="35 - 44">35 - 44</label>
+            <input type="checkbox" name="age_field" value="45 - 54" id="45 - 54">
+            <label for="45 - 54">45 - 54</label>
+            <input type="checkbox" name="age_field" value="55 - 64" id="55 - 64">
+            <label for="55 - 64">55 - 64</label>
+			<input type="checkbox" name="age_field" value="65 and Over" id="65 and Over">
+            <label for="65 and Over">65 and Over</label>
+        </fieldset>
+        <fieldset>
+            <legend>My Availability:</legend>
+            Days Available:<br>
+            <input type="checkbox" name="available_field[]" value="Sunday"> Sunday<br>
+            <input type="checkbox" name="available_field[]" value="Monday"> Monday<br>
+            <input type="checkbox" name="available_field[]" value="Tuesday"> Tuesday<br>
+            <input type="checkbox" name="available_field[]" value="Wednesday"> Wednesday<br>
+            <input type="checkbox" name="available_field[]" value="Thursday"> Thursday<br>
+            <input type="checkbox" name="available_field[]" value="Friday"> Friday<br>
+            <input type="checkbox" name="available_field[]" value="Saturday"> Saturday<br>
+            <br>
+            Any Comments?<br>
+            <textarea rows="15" cols="30" name="comments_field" placeholder="Write Comments here...!"></textarea>
+        </fieldset>
+        <input type="hidden" name="hidden_field" value="rbrockman">
+        <input type="submit" value="Send Me">
+    </form>
 </body>
 </html>
